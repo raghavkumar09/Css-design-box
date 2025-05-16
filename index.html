@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="bundle-section">
+        <h2>Bundle & Save</h2>
+
+        <div class="bundle-options">
+            <!-- Option 1: 1 Pair -->
+            <div class="bundle-option" data-price="195.00">
+                <input type="radio" id="pair1" name="bundle-choice" value="1">
+                <label for="pair1" class="option-label">
+                    <span class="radio-custom"></span>
+                    <div class="option-info">
+                        <span class="option-title">1 Pair</span>
+                        <span class="option-price">DKK 195.00</span>
+                    </div>
+                    <div class="option-discount">
+                        <span>50% OFF</span>
+                        <!-- Original Price (Optional, for context) -->
+                        <!-- <span class="original-price">DKK 390.00</span> -->
+                    </div>
+                </label>
+                <div class="option-details">
+                    <!-- Details hidden by default, structure added for consistency -->
+                     <div class="details-grid">
+                        <span class="grid-label-header"></span> <!-- Placeholder if needed -->
+                        <span class="grid-label-header">Size</span>
+                        <span class="grid-label-header">Colour</span>
+                        <span class="grid-label">#1</span>
+                        <select name="size-1-1" aria-label="Size for pair 1">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select name="colour-1-1" aria-label="Colour for pair 1">
+                            <option value="colour">colour</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Option 2: 2 Pair (Most Popular) -->
+            <div class="bundle-option popular" data-price="345.00">
+                <input type="radio" id="pair2" name="bundle-choice" value="2" checked>
+                <label for="pair2" class="option-label">
+                     <span class="tag-popular">Most Popular</span>
+                    <span class="radio-custom"></span>
+                    <div class="option-info">
+                        <span class="option-title">2 Pair</span>
+                        <span class="option-price">DKK 345.00</span>
+                    </div>
+                    <div class="option-discount">
+                        <span>40% OFF</span>
+                         <!-- Original Price (Optional) -->
+                         <span class="original-price">DKK 195.00</span> <!-- This seems incorrect based on 40% off, maybe per item? Let's keep what's in the image -->
+                    </div>
+                </label>
+                <div class="option-details">
+                   <div class="details-grid">
+                        <span class="grid-label-header"></span> <!-- Placeholder -->
+                        <span class="grid-label-header">Size</span>
+                        <span class="grid-label-header">Colour</span>
+
+                        <span class="grid-label">#1</span>
+                        <select name="size-2-1" aria-label="Size for pair 1 of 2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select name="colour-2-1" aria-label="Colour for pair 1 of 2">
+                            <option value="colour">colour</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+
+                        <span class="grid-label">#2</span>
+                        <select name="size-2-2" aria-label="Size for pair 2 of 2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select name="colour-2-2" aria-label="Colour for pair 2 of 2">
+                             <option value="colour">colour</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Option 3: 3 Pair -->
+            <div class="bundle-option" data-price="528.00">
+                <input type="radio" id="pair3" name="bundle-choice" value="3">
+                <label for="pair3" class="option-label">
+                    <span class="radio-custom"></span>
+                    <div class="option-info">
+                        <span class="option-title">3 Pair</span>
+                        <span class="option-price">DKK 528.00</span>
+                    </div>
+                     <div class="option-discount">
+                        <span>60% OFF</span>
+                        <!-- <span class="original-price">DKK 1320.00</span> -->
+                    </div>
+                </label>
+                <div class="option-details">
+                    <div class="details-grid">
+                        <span class="grid-label-header"></span> <!-- Placeholder -->
+                        <span class="grid-label-header">Size</span>
+                        <span class="grid-label-header">Colour</span>
+
+                        <span class="grid-label">#1</span>
+                        <select name="size-3-1" aria-label="Size for pair 1 of 3">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select name="colour-3-1" aria-label="Colour for pair 1 of 3">
+                            <option value="colour">colour</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+
+                        <span class="grid-label">#2</span>
+                        <select name="size-3-2" aria-label="Size for pair 2 of 3">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select name="colour-3-2" aria-label="Colour for pair 2 of 3">
+                            <option value="colour">colour</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+
+                         <span class="grid-label">#3</span>
+                        <select name="size-3-3" aria-label="Size for pair 3 of 3">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <select name="colour-3-3" aria-label="Colour for pair 3 of 3">
+                            <option value="colour">colour</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="grey">Grey</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <p class="shipping-info">Free 2 Day Shipping</p>
+            <p class="total-price">Total : <span id="total-amount">DKK 360.00</span></p> <!-- Note: The total in the image (360) doesn't match the selected price (345). Sticking to the image total for now. -->
+        </div>
+
+        <button class="add-to-cart-btn">+ Add to Cart</button>
+
+        <p class="footer-powered-by">© Powered by Pumper</p>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
